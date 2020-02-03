@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+            android:layout_width="240dp"
+            android:layout_height="240dp" app:srcCompat="@drawable/miuw" android:id="@+id/imageView"
+            android:layout_marginBottom="32dp" app:layout_constraintBottom_toBottomOf="@+id/gridLayout"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="sesMeow1"
+    />
+    <GridLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/gridLayout">
+
+        <Button
+                android:text="MiuWwW"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="miuw_buton"/>
+        <TextView
+                android:layout_width="40dp"
+                android:layout_height="1dp" android:id="@+id/textView"/>
+        <Button
+                android:text="KEDYLER"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_column="2"
+                android:id="@+id/btn1"
+                android:onClick="kedy_buton"/>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
